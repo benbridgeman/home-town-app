@@ -1,0 +1,139 @@
+@media screen and (max-width: 449px) {
+	body {
+		font-size: 14px;
+	}
+	.header__menu svg {
+		width: 32px;
+		padding: 1.1em;
+		fill: #cccccc;
+		display: inline-block;
+		position: absolute;
+		right: 0;
+	}
+	.header__logo {
+		height: 40px;
+		margin-top: 10px;
+		margin-right: 0.3em;
+		margin-left: 0.3em;
+	}
+	.header__title {
+		font-size: 2em;
+		margin-left: 0.2em;
+	}
+	.nav {
+		z-index: 99;
+		background-color: #fff;
+		width: 300px;
+		position: absolute;
+		-webkit-transform: translate(-300px, 0);
+		transform: translate(-300px, 0);
+		transition: transform 0.5s ease;
+	}
+	.nav.open {
+		-webkit-transform: translate(0, 0);
+		transform: translate(0, 0);
+	}
+	.nav__item {
+		display: block;
+	}
+	.snippet__thumbnail {
+		display: none;
+	}
+	.scores__header {
+		display: block;
+	}
+	.scores {
+		margin-top: 0;
+	}
+}
+
+@media screen and (min-width: 450px) and (max-width: 499px) {
+	.header__title {
+		font-size: 3em;
+	}
+	.header__logo {
+		height: 52px;
+		margin-top: 12px;
+		margin-right: 0.5em;
+		margin-left: 0.5em;
+	}
+	.snippet__thumbnail {
+		width: 100px;
+	}
+	.scores__header {
+		display: block;
+	}
+	.scores {
+		margin-top: 0;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 649px) {
+	.header__title {
+		font-size: 3.5em;
+	}
+	.header__logo {
+		height: 62px;
+		margin-top: 12px;
+		margin-right: 0.5em;
+		margin-left: 0.5em;
+	}
+	.hero {
+		order: 0;
+	}
+	.top-news {
+		order: 1;
+		width: 55%;
+	}
+	.scores {
+		order: 3;
+	}
+	.weather {
+		order: 2;
+		width: 45%;
+	}
+	.recent-news {
+		order: 4;
+	}
+	.snippet__thumbnail {
+		width: 110px;
+	}
+	.scores__date {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 650px) {
+	.hero {
+		order: 0;
+		width: 65%;
+	}
+	.top-news {
+		order: 1;
+		width: 35%;
+	}
+	.scores {
+		order: 3;
+		width: 65%;
+	}
+	.weather {
+		order: 2;
+		width: 35%;
+	}
+	.recent-news {
+		order: 4;
+	}
+	.snippet {
+		width: calc((100% - 85px)/2);
+		display: inline-block;
+		vertical-align: top;
+	}
+	.snippet__thumbnail {
+		float: right;
+		margin-left: 20px;
+		margin-right: 0;
+	}
+	.scores__date {
+		display: block;
+	}
+}
